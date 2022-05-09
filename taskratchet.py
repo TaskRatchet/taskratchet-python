@@ -43,7 +43,10 @@ class TaskRatchet:
         return self._make_request(url, 'POST', data)
 
     def _make_request(self, url, method, data=None):
-        headers = {'X-Taskratchet-Token': self._token}
+        headers = {
+            'X-Taskratchet-Userid': self._user_id,
+            'X-Taskratchet-Token': self._token
+        }
 
         if data:
             response = requests.request(method, url, headers=headers, json=data)
