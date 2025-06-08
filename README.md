@@ -1,5 +1,9 @@
 # taskratchet-python
 
+NOTE: This repository is archived and no longer maintained. This was done in
+preparation for sunsetting TaskRatchet API v1. Please move to v2 of the API
+instead.
+
 Python wrapper for the TaskRatchet API
 
 The TaskRatchet API is in its early stages. It may change without warning.
